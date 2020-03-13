@@ -18,9 +18,9 @@ function Header() {
     date.textContent = 'SMARCH 28, 2019';
     header.appendChild(date);
 
-    const title = document.createElement('h1');
+    const h1 = document.createElement('h1');
     h1.textContent = 'Lambda Times';
-    header.appendChild(title);
+    header.appendChild(h1);
 
     const temp = document.createElement('span');
     temp.classList.add('temp');
@@ -30,4 +30,5 @@ function Header() {
     return header;
 }
 
-document.querySelector('.header-container').appendChild(Header());
+const headerCon = document.querySelector('.header-container');
+headerCon.appendChild(Header());
